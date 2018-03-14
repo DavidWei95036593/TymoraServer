@@ -9,7 +9,7 @@ namespace Tymora.Models{
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if (!optionsBuilder.IsConfigured){
-                optionsBuilder.UseMySql(@"Server=120.79.186.46;uid=taoria;pwd=Endofthegod@99;database=tymora;");
+                optionsBuilder.UseMySql(ConfigurationManager.ConnectionStrings["TymoraDatabase"].ConnectionString);
             }
         }
 

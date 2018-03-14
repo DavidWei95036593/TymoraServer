@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  tymoraserver:
+    image: tymoraserver
+    build:
+      context: .
+      dockerfile: TymoraServer/Dockerfile

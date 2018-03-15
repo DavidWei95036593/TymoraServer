@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -14,7 +15,6 @@ namespace Tymora.Models{
         }
 
         public TymoraContext(DbContextOptions options):base(options) {
-           
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
